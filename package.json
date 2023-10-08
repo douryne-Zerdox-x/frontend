@@ -17,7 +17,8 @@
     "fmt": "prettier --write .",
     "fmt:check": "prettier --check .",
     "lint": "eslint \"src/**/*.ts*\"",
-    "preview": "qwik build preview && vite preview"
+    "preview": "qwik build preview && vite preview",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@builder.io/qwik": "^1.2.13",
@@ -28,10 +29,16 @@
     "@typescript-eslint/parser": "6.2.0",
     "eslint": "8.45.0",
     "eslint-plugin-qwik": "^1.2.13",
+    "husky": "^8.0.3",
     "prettier": "3.0.0",
     "typescript": "5.1.6",
     "undici": "5.22.1",
     "vite": "4.4.7",
-    "vite-tsconfig-paths": "4.2.0"
+    "vite-tsconfig-paths": "4.2.0",
+    "commitlint": "^17.7.2"
+  },
+  "dependencies": {
+    "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/types": "^17.4.4"
   }
 }
