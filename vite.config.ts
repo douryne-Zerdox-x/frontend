@@ -11,7 +11,7 @@ export default defineConfig(() => {
       qwikVite(),
       tsconfigPaths(),
       AutoImport({
-        imports: [{ "@builder.io/qwik": ["component$"] }],
+        imports: [{ "@builder.io/qwik": ["component$", "Slot"] }],
         dts: "./src/auto-imports.d.ts"
       })
     ],
